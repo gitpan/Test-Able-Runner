@@ -1,5 +1,5 @@
 package Test::Able::Runner::Role::Meta::Class;
-our $VERSION = '1.000';
+our $VERSION = '1.001';
 use Moose::Role;
 
 =head1 NAME
@@ -8,7 +8,7 @@ Test::Able::Runner::Role::Meta::Class - metaclass role for test runners
 
 =head1 VERSION
 
-version 1.000
+version 1.001
 
 =head1 DESCRIPTION
 
@@ -124,6 +124,9 @@ sub build_test_objects {
             warn "FAILED TO LOAD $test_class. Skipping.";
             next PACKAGE;
         }
+
+        # Only Test::Able::Objects are tests we want
+        next PACKAGE unless $test_class->isa('Test::Able::Object');
 
         # Make sure this test has not been excluded
         {

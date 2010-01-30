@@ -1,5 +1,5 @@
 package Test::Test::Able::Runner::Dickory;
-our $VERSION = '1.000';
+our $VERSION = '1.001';
 use Test::Able;
 use Test::Simple;
 
