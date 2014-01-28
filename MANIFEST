@@ -7,6 +7,8 @@ README
 dist.ini
 lib/Test/Able/Runner.pm
 lib/Test/Able/Runner/Role/Meta/Class.pm
+lib/Test/Able/Runner/Role/Meta/Class.pm.orig
+lib/Test/Able/Runner/Role/Meta/Class.pm.rej
 t/base/Test/Test/Able/Runner/Dickory.pm
 t/base/Test/Test/Able/Runner/Dock.pm
 t/base/Test/Test/Able/Runner/Hickory.pm

@@ -1,5 +1,7 @@
 package Test::Able::Runner;
-our $VERSION = '1.001';
+{
+  $Test::Able::Runner::VERSION = '1.002';
+}
 use Moose;
 use Test::Able ();
 use Moose::Exporter;
@@ -11,7 +13,7 @@ Test::Able::Runner - use Test::Able without a bunch of boilerplate
 
 =head1 VERSION
 
-version 1.001
+version 1.002
 
 =head1 SYNOPSIS
 
